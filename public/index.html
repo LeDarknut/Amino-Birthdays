@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="A birthday system for Amino." />
+		<meta name="viewport" content="initial-scale=0" id="viewport"/>
+		<title>Amino Birthdays</title>
+		<link rel="icon" href="favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="index-style.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"/> 
+	</head>
+	<body>
+		<div id="page-loading">
+			<svg viewBox="0 0 16 16">
+				<defs>
+					<mask id="myMask">
+						<rect x="0" y="0" width="16" height="16" fill="#ffffff"/>
+						<path d="
+							M 10,15
+							L 8,11
+							L 6,15
+							C 7,14 9,12.5 10.5,12.5
+						" stroke="#000000" stroke-width="1" fill="#ffffff" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="
+							M 0,9
+							C 1,9 1,10 2,10
+							C 3,10 3,9 4,9
+							C 5,9 5,10 6,10
+							C 7,10 7,9 8,9
+							C 9,9 9,10 10,10
+							C 11,10 11,9 12,9
+							C 13,9 13,10 14,10
+							C 15,10 15,9 16,9
+						" stroke="#000000" stroke-width="1" fill="#ffffff"/>
+					</mask>
+				</defs>
+				<rect x="0" y="6" width="16" height="10" fill="#ffffff" rx="2" ry="2" mask="url(#myMask)"/>
+				<path d="
+					M 3.5,7
+					L 3.5,3
+					A 1 1 0 0 1 4,2
+					C 3,2 3,1 4,0
+					C 5,1 5,2 4,2
+					A 1 1 0 0 1 4.5,3
+					L 4.5,7
+					Z
+				" fill="#ffffff"/>
+				<path d="
+					M 7.5,7
+					L 7.5,3
+					A 1 1 0 0 1 8,2
+					C 7,2 7,1 8,0
+					C 9,1 9,2 8,2
+					A 1 1 0 0 1 8.5,3
+					L 8.5,7
+					Z
+				" fill="#ffffff"/>
+				<path d="
+					M 11.5,7
+					L 11.5,3
+					A 1 1 0 0 1 12,2
+					C 11,2 11,1 12,0
+					C 13,1 13,2 12,2
+					A 1 1 0 0 1 12.5,3
+					L 12.5,7
+					Z
+				" fill="#ffffff"/>
+			</svg>
+		</div>
+		<div id="header">
+			<div id="header_menu">
+				<svg id="header_menu_icon" viewBox="0 0 16 16">
+					<line id="header_menu_icon_line-1" x1="2" y1="4" x2="14" y2="4" fill="transparent" stroke="#ffffff" stroke-linecap="round" stroke-width="1"/>
+					<line id="header_menu_icon_line-2" x1="2" y1="8" x2="14" y2="8" fill="transparent" stroke="#ffffff" stroke-linecap="round" stroke-width="1"/>
+					<line id="header_menu_icon_line-3" x1="2" y1="12" x2="14" y2="12" fill="transparent" stroke="#ffffff" stroke-linecap="round" stroke-width="1"/>
+				</svg>
+			</div>
+			<div id="header_page-title">
+				<span></span>
+			</div>	
+		</div>
+		<div id="menu">
+			<div id="menu_title">
+				<a href="javascript: void(0)"></a>
+			</div>
+			<svg id="menu_separator" viewBox="0 0 270 1">
+				<line x1="0.5" y1="0.5" x2="269.5" y2="0.5" fill="transparent" stroke="#ffffff" stroke-linecap="round" stroke-width="1"/>
+			</svg>
+			<div id="menu_community">
+				<span class="menu_subtitle"></span>
+				<div id="menu_community_upcoming" class="menu_item">
+					<span></span>
+				</div>
+				<div id="menu_community_browse" class="menu_item">
+					<span></span>
+				</div>
+			</div>
+			<div id="menu_profile">
+				<span class="menu_subtitle"></span>
+				<div id="menu_profile_submit" class="menu_item">
+					<span></span>
+				</div>
+				<div id="menu_profile_remove" class="menu_item">
+					<span></span>
+				</div>
+				<div id="menu_profile_validate" class="menu_item">
+					<span></span>
+				</div>
+			</div>
+			<div id="menu_project_about" class="menu_item">
+					<span></span>
+			</div>
+		</div>
+		<div id="page">
+			<div id="page_community_upcoming">
+				<span id="page_community_upcoming_message"></span>
+				<div id="page_community_upcoming_birthdays">
+					
+				</div>
+			</div>
+			<div id="page_community_browse">
+				<div id="page_community_browse_form_link">
+					<input class="form_input" type="text">
+				</div>
+				<div id="page_community_browse_message">
+					<span></span>
+				</div>
+				<div id="page_community_browse_preview">
+				</div>
+			</div>
+			<div id="page_profile_submit">
+				<div id="page_profile_submit_form">
+					<div id="page_profile_submit_form_name">
+						<input class="form_input" type="text">
+					</div>
+					<div id="page_profile_submit_form_link">
+						<input class="form_input" type="text">
+					</div>
+					<div id="page_profile_submit_form_birthday">
+						<div id="page_profile_submit_form_birthday_label">
+							<span></span>
+						</div>
+						<div id="page_profile_submit_form_birthday_inputs">
+							<input id="page_profile_submit_form_birthday_inputs_month" class="form_input">
+							<span id="page_profile_submit_form_birthday_inputs_date_separator">/</span>
+							<input id="page_profile_submit_form_birthday_inputs_day" class="form_input">
+							<span id="page_profile_submit_form_birthday_inputs_timezone_separator">UTC</span>
+							<input id="page_profile_submit_form_birthday_inputs_timezone" class="form_input">
+						</div>
+					</div>
+					<div id="page_profile_submit_form_color">
+						<input class="input" type="range" value="0" min="0" max="23" step="1">
+					</div>
+					<div id="page_profile_submit_preview">
+
+					</div>
+					<div class="form_submit" id="page_profile_submit_upload">
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div id="page_profile_remove">
+				<div id="page_profile_remove_form_link">
+					<input class="form_input" type="text">
+				</div>
+				<div class="form_submit" id="page_profile_remove_upload">
+					<span></span>
+				</div>
+			</div>
+			<div id="page_profile_validate">
+				<div id="page_profile_validate_form_code">
+					<input class="form_input" type="text">
+				</div>
+				<div class="form_submit" id="page_profile_validate_upload">
+					<span></span>
+				</div>
+			</div>
+			<div id="page_project_about">
+				<p></p>
+			</div>
+		</div>
+		<div id="widget">
+			<div class="widget_birthday">
+				<a class="widget_birthday_link" href="javascript: void(0)">
+					<div class="widget_birthday_cadre">
+						<div class="widget_birthday_name">
+							<span></span>
+						</div>
+						<div class="widget_birthday_countdown">
+							<span class="widget_birthday_countdown_day">000</span>
+							<span class="widget_birthday_countdown_hour">00</span>
+							<span class="widget_birthday_countdown_semicolon">:</span>
+							<span class="widget_birthday_countdown_minute">00</span>
+							<span class="widget_birthday_countdown_semicolon">:</span>
+							<span class="widget_birthday_countdown_second">00</span>
+						</div>
+						<div class="widget_birthday_message">
+							<span></span>
+						</div>
+						<div class="widget_birthday_date">
+							<span>00/00</span>
+						</div>
+						<div class="widget_birthday_timezone">
+							<span>UTC</span>
+							<span>+00</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div id="notification">
+			<span></span>
+		</div>
+		<div id="loading">
+			<svg id="loading_animation" viewBox="0 0 80 16">
+				<circle cx="8" cy="8" r="2" fill="#ffffff">
+					<animate attributeName="r" begin="0s" values="2;6;2" keyTimes="0;0.2;1" dur="1s" repeatCount="indefinite"/>
+				</circle>
+				<circle cx="24" cy="8" r="2" fill="#ffffff">
+					<animate attributeName="r" begin="0.1s" values="2;6;2" keyTimes="0;0.2;1" dur="1s" repeatCount="indefinite"/>
+				</circle>
+				<circle cx="40" cy="8" r="2" fill="#ffffff">
+					<animate attributeName="r" begin="0.2s" values="2;6;2" keyTimes="0;0.2;1" dur="1s" repeatCount="indefinite"/>
+				</circle>
+				<circle cx="56" cy="8" r="2" fill="#ffffff">
+					<animate attributeName="r" begin="0.3s" values="2;6;2" keyTimes="0;0.2;1" dur="1s" repeatCount="indefinite"/>
+				</circle>
+				<circle cx="72" cy="8" r="2" fill="#ffffff">
+					<animate attributeName="r" begin="0.4s" values="2;6;2" keyTimes="0;0.2;1" dur="1s" repeatCount="indefinite"/>
+				</circle>
+			</svg>
+		</div>
+		<script src="/index-script.js"></script>
+	</body>
+</html>

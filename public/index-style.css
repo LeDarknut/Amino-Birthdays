@@ -1,0 +1,564 @@
+body {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-size: max(100vw, 56.25vh);
+    background-position-y: calc(-1 * ((max(177.78vw, 100vh) - 100vh) / 2));
+    background-position-x: calc(-1 * ((max(100vw, 56.25vh) - 100vw) / 2));
+	margin: 0vmin;
+}
+
+::-webkit-scrollbar {
+    width: 6vmin !important;
+}
+
+::-webkit-scrollbar-thumb {
+   border-radius: 3vmin !important;
+   background: #088a56A0 !important; 
+   min-height: 20vmin !important;
+}
+
+html {
+	overflow: hidden;
+}
+
+#page-loading {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	background-color : #088a56;
+	z-index: 11;
+}
+
+#page-loading>svg {
+	margin-top : calc((100vh - 40vmin) / 2);
+	width: 40vmin;
+	height: 40vmin;
+}
+
+#header {
+	display: flex;
+	height : 8vh;
+	position : fixed;
+	background-color : #088a56;
+	left : 0px;
+	right : 0px;
+	top : 0px;
+	align-items: center;
+	justify-content: center;
+}
+
+#header_menu {
+	background-color : #088a56;
+	position: absolute;
+	left : 1vh;
+	top : 1vh;
+	width : 6vh;
+	height : 6vh;
+}
+
+#header_menu_icon {
+	width : 6vh;
+	height : 6vh;
+}
+
+#header_page-title {
+	color : #ffffff;
+	font-size: 5vmin;
+	font-family: Roboto;
+}
+
+#page {
+	display: none;
+	background-color : #ffffff80;
+	backdrop-filter: blur(4px);
+	position : fixed;
+	left: 0px;
+	right: 0px;
+	top : 8vh;
+	bottom: 0px;
+	text-align: center;
+	padding-top: 2vmin;
+	overflow-x: hidden;
+	overflow-y: overlay;
+}
+
+.form_input{
+	outline-style: none;
+	width: 78vmin;
+	height : 5vmin;
+	font-size: 4vmin;
+	font-family: Roboto;
+	padding-top: 1vmin;
+	padding-left: 1vmin;
+	padding-right: 1vmin;
+	border-style: none;
+	background-color : #ffffff80;
+	border-bottom-style: solid;
+	border-bottom-width: 0.5vmin;
+	border-bottom-color: #000000;
+	border-radius: 0.5vmin;
+}
+
+.form_input:focus {
+	border-color: #088a56;
+}
+
+.form_submit {
+	background-color: #088a56;
+	border-radius: 1vmin;
+	margin-left: 24vmin;
+	margin-right: 24vmin;
+	margin-top: 2vmin;
+	margin-bottom: 2vmin;
+	width: 32vmin;
+	height: 8vmin;
+	text-align: center;
+}
+
+.form_submit>span {
+	color : #ffffff;
+	font-size: 4vmin;
+	font-family: Roboto;
+    line-height: 8vmin;
+}
+
+#page_community_upcoming_message {
+	color : #000000;
+	font-size: 4vmin;
+	font-family: Roboto;
+	line-height: 8vmin;
+}
+
+#page_community_upcoming_birthdays {
+	margin-top: 2vmin;
+}
+
+#page_community_browse_form_link {
+	width: 80vmin;
+}
+
+#page_community_browse_message {
+	display: none;
+}
+
+#page_community_browse_message>span {
+	color : #000000;
+	font-size: 4vmin;
+	font-family: Roboto;
+    line-height: 8vmin;
+}
+
+#page_community_browse_preview {
+	display: none;
+}
+
+#page_profile_submit {
+    display: block;
+    width : 100vmin;
+}
+
+#page_profile_submit_form {
+	display: inline-block;
+	text-align: center;
+	padding-left: 10vmin;
+	padding-right: 10vmin;
+}
+
+#page_profile_submit_form_name {
+	height: 7vmin;
+	display : flex;
+}
+
+#page_profile_submit_form_link {
+	height: 7vmin;
+	display : flex;
+	margin-top : 1vmin;
+	margin-bottom: 1vmin;
+}
+
+#page_profile_submit_form_link>input:focus {
+	border-color: #088a56;
+}
+
+#page_profile_submit_form_birthday {
+	display: inline-flex;
+}
+
+#page_profile_submit_form_birthday_label {
+	width: 20vmin;
+	text-align: left;
+}
+
+#page_profile_submit_form_birthday_inputs {
+	width: 60vmin;
+	text-align: right;
+}
+
+#page_profile_submit_form_birthday_label>span {
+	color : #000000;
+	font-size: 4vmin;
+	font-family: Roboto;
+    line-height: 7vmin;
+}
+
+#page_profile_submit_form_birthday_inputs_date_separator {
+	color : #000000;
+	font-size: 4vmin;
+	font-family: Roboto;
+	line-height: 6vmin;
+	margin-left: 0.2vmin;
+	margin-right: 0.2vmin;
+}
+
+#page_profile_submit_form_birthday_inputs_day {
+	text-align: center;
+	width : 7.2vmin;
+}
+
+#page_profile_submit_form_birthday_inputs_month {
+	text-align: center;
+	width : 7.2vmin;
+}
+
+#page_profile_submit_form_birthday_inputs_timezone_separator {
+	color : #000000;
+	font-size: 4vmin;
+	font-family: Roboto;
+	line-height: 6vmin;
+	margin-left: 4vmin;
+	margin-right: 0.2vmin;
+}
+
+#page_profile_submit_form_birthday_inputs_timezone {
+	text-align: center;
+	width : 7.2vmin;
+}
+
+#page_profile_submit_form_color {
+	width : 80vmin;
+	height: 5vmin;
+	display : flex;
+}
+
+#page_profile_submit_form_color>input {
+	height : 4vmin;
+	width : 80vmin;
+	margin-top: 1vmin;
+	outline: 0;
+	border-radius: 1vmin;
+	border-color: #ffffff;
+	-webkit-appearance: none;
+	background: linear-gradient(to right, hsl(0, 100%, 60%) 0%, hsl(30, 100%, 55%) 8.75%, hsl(60, 100%, 50%) 17.5%, hsl(90, 100%, 55%) 26.25%, hsl(120, 100%, 60%) 35%, hsl(150, 100%, 55%) 43.75%, hsl(180, 100%, 50%) 52.5%, hsl(210, 100%, 55%) 61.25%, hsl(240, 100%, 60%) 70%, hsl(270, 100%, 55%) 78.75%, hsl(300, 100%, 50%) 87.5%, hsl(330, 100%, 55%) 96.25%, hsl(360, 100%, 60%) 105%);
+}
+
+#page_profile_submit_form_color>input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 4vmin;
+	width: 2vmin;
+	border-radius: 1vmin;
+	border-color: #000000;
+	border-style: solid;
+	border-width: 0.5vmin;
+	cursor: pointer;
+	margin-top: 0px;
+}
+
+#page_profile_submit_form_color>input:focus::-webkit-slider-thumb {
+	border-color: #088a56;
+}
+
+#page_profile_submit_preview {
+	width: 80vmin;
+}
+
+#page_project_about{
+	width : 90vmin;
+}
+
+#page_project_about>p {
+	color : #000000;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+	font-size: 4vmin;
+	font-family: Roboto;
+	line-height: 6vmin;
+	text-align: justify;
+}
+
+#menu {
+	display : block;
+	height : calc(100vh - 8vmin);
+	width : 100vmin;
+	position : fixed;
+	background-color : #088a56E0;
+	backdrop-filter: blur(2px);
+	left : -100vmin;
+	top : 8vh;
+	text-align : left;
+	padding-top : 2vmin;
+	z-index : 10;
+}
+
+#menu_title {
+	width: 90vmin;
+	margin-left: 5vmin;
+	padding-top: 2vmin;
+	text-align: center;
+}
+
+#menu_title>a {
+	overflow-wrap: break-word;
+	text-decoration : none;
+	line-height: 6vmin;
+	font-family: Roboto;
+	font-size: 6vmin;
+	color:  #ffffff;
+	font-weight: 200;
+}
+
+#menu_separator {
+	width: 90vmin;
+	margin-left: 5vmin;
+	margin-right: 5vmin;
+	margin-top: 3vmin;
+	height: 2vmin;
+}
+
+.menu_item{
+	width: 100vmin;
+}
+
+.menu_item>span{
+	padding-left: 20vmin;
+	line-height: 6vmin;
+	font-family: Roboto;
+	font-size: 5vmin;
+	color:  #ffffff;
+}
+
+.menu_subtitle{
+	padding-left: 12vmin;
+	line-height: 10vmin;
+	font-family: Roboto;
+	font-size: 6vmin;
+	color:  #ffffff;
+}
+
+#menu_project_about {
+	margin-top: 5vmin;
+	text-align-last: center;
+}
+
+#menu_project_about>span {
+	padding-left: 0vmin;
+	font-size: 5.5vmin;
+}
+
+#widget {
+	display: none;
+	position : fixed;
+	left: 0px;
+	right: 0px;
+	top : 0px;
+	bottom: 0px;
+}
+
+.widget_birthday {
+	width : 100%;
+	text-align : center;
+	margin-bottom: 4vmin;
+	margin-bottom: 4vmin;
+}
+
+.widget_birthday_link {
+	text-decoration : none;
+	display : inline-block;
+}
+
+.widget_birthday_cadre {
+	border-radius : 5vmin;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 1vmin;
+	display : block;
+	text-align: center;
+	width : 78vmin;
+	overflow: hidden;
+}
+
+.widget_birthday_name {
+	height: 12vmin;
+	width: 78vmin;
+}
+
+.widget_birthday_name>span {
+	font-size: 6vmin;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+	font-family: Roboto;
+	line-height: 12vmin;
+}
+
+.widget_birthday_countdown {
+	height: 16vmin;
+	width: 78vmin;
+	text-align:center;
+	display: block;
+}
+
+.widget_birthday_countdown_day {
+	font-size: 10vmin;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+	line-height: 16vmin;
+	font-family: Roboto;
+	padding-left: 2vmin;
+	padding-right: 2vmin;
+	margin-right: 1vmin;
+	color:  #ffffff;
+	border-radius: 2vmin;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 1vmin;
+}
+
+.widget_birthday_countdown_hour {
+	font-size: 8vmin;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+	font-family: Roboto;
+	color:  #ffffff;
+}
+
+.widget_birthday_countdown_semicolon {
+	font-size: 8vmin;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+	font-family: Roboto;
+	color:  #ffffff;
+}
+
+.widget_birthday_countdown_minute {
+	font-size: 8vmin;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+	font-family: Roboto;
+	color:  #ffffff;
+}
+
+.widget_birthday_countdown_second {
+	font-size: 8vmin;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+	font-family: Roboto;
+	color:  #ffffff;
+}
+
+.widget_birthday_message {
+	height: 16vmin;
+	width: 78vmin;
+	text-align: center;
+	color:  #ffffff;
+	display: none;
+}
+
+.widget_birthday_message>span {
+	font-size: 6vmin;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+	line-height: 16vmin;
+	font-family: Roboto;
+}
+
+.widget_birthday_date {
+	margin-top: 1vmin;
+	height: 7vmin;
+	width: 78vmin;
+	text-align :center;
+	display: block;
+}
+
+.widget_birthday_date>span {
+	color :  #ffffff;
+	font-size: 6vmin;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+	font-family: Roboto;
+	line-height: 7vmin;
+}
+
+.widget_birthday_timezone {
+	height: auto;
+	width: 78vmin;
+	text-align :center;
+	display: block;
+	margin-bottom : 0.5vmin;
+}
+
+.widget_birthday_timezone>span {
+	color :  #ffffff;
+	font-size: 3vmin;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+	font-family: Roboto;
+	line-height: 3vmin;
+}
+
+#notification {
+	background-color :#8A083C;
+	backdrop-filter: blur(2px);
+	text-align: center;
+	width: 90vmin;
+	min-height: 4vmin;
+	position: absolute;
+	bottom: 0vh;
+	right: -100vmin;
+	z-index: 12;
+	border-top-left-radius: 1vmin;
+	padding: 2vmin;
+	overflow-wrap: break-word;
+}
+
+#notification>span {
+	color: #ffffff;
+	line-height: 4vmin;
+	font-family: Roboto;
+	font-size: 3vmin;
+}
+
+#loading {
+	display: none;
+	opacity: 0;
+	background-color: #808080C0;
+	backdrop-filter: blur(2px);
+	text-align: center;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0vmin;
+    left: 0vmin;
+    padding-top: 8vmin;
+	z-index: 9;
+}
+
+#loading_animation {
+	margin-top : calc((100vh - 38vmin) / 2);
+	width: 30vmin;
+	height: 30vmin;
+}
