@@ -1,0 +1,155 @@
+{
+    "user": {
+		"date_format" : "0",
+		"title": {
+			"community_upcoming": "Upcoming birthdays",
+			"community_browse": "Find a user",
+			"profile_submit": "Submit your birthday",
+			"profile_remove": "Remove your birthday",
+			"profile_validate": "Use a validation code",
+			"project_about": "About Amino Birthdays"
+		},
+		"upload": "Validate",
+		"link": "Link to the profile",
+		"name": "Name",
+		"birthday": "Birthday",
+		"day": "DD",
+		"month": "MM",
+		"timezone": "TZ",
+		"date": "MM/DD",
+		"birthday_message": "Happy Birthday!",
+		"code": "Validation code",
+		"menu" : {
+			"community": {
+				"title" : "Community",
+				"upcoming": "Upcoming birthdays",
+				"browse": "Find a user"
+			},
+			"profile": {
+				"title" : "My profile",
+				"submit": "Submit or edit",
+				"remove": "Remove",
+				"validate": "Validate"
+			},
+			"about": "About Amino Birthdays"
+		},
+		"page" : {
+			"community_upcoming_message": "Submitted birthdays: ${birthday}",
+			"community_browse_message": "User not found.",
+			"about": "Amino Birthdays is a web app which feature an automated birthday system. Members can submit or remove their birthday themselves. The application rely on the Amino API to inform followers about upcoming birthdays.<br><br>For questions and requests, contact me on <a href='mailto:aminobirthdays@gmail.com'>aminobirthdays@gmail.com</a>.",
+			"advertisement": "Web has a cost."
+		},
+		"notify": {
+			"common_error" : {
+				"101" : "Error : Something went wrong with Amino's servers.",
+				"102": "Error : Something went wrong with Amino Birthdays.",
+				"300": "Error : Forbidden."
+			},
+			"page_load": {
+				"201" : "Error : This community doesn't use Amino Birthday."
+			},
+			"profile_submit": {
+				"000" : "Success : Check your DM for the validation code.",
+				"201" : "Error : This community doesn't use Amino Birthday.",
+				"202" : "Error : You provided a wrong link.",
+				"203" : "Error : You are banned.",
+				"204" : "Error : You need ${rep_min} reputation to submit."
+			},
+			"profile_remove": {
+				"000" : "Success : Check your DM for the validation code.",
+				"201" : "Error : This community doesn't use Amino Birthday.",
+				"202" : "Error : You provided a wrong link.",
+				"203" : "Error : You didn't submit before."
+			},
+			"profile_validate": {
+				"000" : "Success : The changes are made.",
+				"201" : "Error : This community doesn't use Amino Birthday.",
+				"202" : "Error : You provided a wrong link."
+			}
+		}
+    },
+    "admin": {
+		"date_format" : "0",
+		"title": {
+			"community_upcoming": "Upcoming birthdays",
+            "community_browse": "Find a user",
+            "community_edit": "Community settings",
+			"community_remove": "Remove this community",
+			"community_admin": "Administrators",
+			"profile_submit": "Submit a birthday",
+			"profile_remove": "Remove a birthday"
+		},
+		"upload": "Validate",
+		"link": "Link to the profile",
+		"name": "Name",
+		"birthday": "Birthday",
+		"day": "DD",
+		"month": "MM",
+		"timezone": "TZ",
+		"date": "MM/DD",
+		"birthday_message": "Happy Birthday!",
+		"password": "Password",
+		"menu": {
+			"community":{
+				"title" : "Community",
+				"upcoming": "Upcoming birthdays",
+				"browse": "Find a user",
+				"edit": "Settings",
+				"remove": "Remove",
+				"admin": "Administrators"
+			},
+			"profile": {
+				"title" : "User profiles",
+				"submit": "Submir or edit",
+				"remove": "Remove"
+			}
+		},
+		"page_community": {
+			"upcoming_message": "Submitted birthdays: ${birthday}",
+			"browse_message": "User not found.",
+			"edit" : {
+				"chat": "Chat's link",
+				"rep": "Minimal reputation needed",
+				"notify": "Messages : Birthday notification",
+				"submit": "Validate : Submit",
+				"edit": "Validate : Edit",
+				"remove": "Validate : Remove"
+			},
+			"remove_message": "Remove Amino Birthdays from this community.",
+			"admin_admin": "Manage the administrators."
+		},
+		"notify": {
+			"common_error" : {
+				"101" : "Error : Something went wrong with Amino's servers.",
+				"102": "Error : Something went wrong with Amino Birthdays.",
+				"300": "Error : Forbidden."
+			},
+			"page_load": {
+				"201" : "Error : This community doesn't use Amino Birthday."
+			},
+			"admin_login": {
+                "000" : "Success : You logged as administrator."
+			},
+			"community_edit": {
+                "000" : "Success : The changes are made."
+			},
+			"community_remove": {
+                "000" : "Success : Amino Birthdays got removed from this community."
+			},
+			"community_admin": {
+                "000" : "Success : The changes are made."
+            },
+            "profile_submit": {
+                "000" : "Success : The changes are made.",
+                "201" : "Error : This community doesn't use Amino Birthday.",
+                "202" : "Error : You provided a wrong link."
+            },
+            "profile_remove": {
+                "000" : "Success : The changes are made.",
+                "201" : "Error : This community doesn't use Amino Birthday.",
+                "202" : "Error : You provided a wrong link.",
+                "203" : "Error : You didn't submit before."
+            }
+		}
+    }
+}

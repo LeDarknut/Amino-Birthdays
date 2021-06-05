@@ -1,0 +1,156 @@
+{
+    "user": {
+		"date_format" : "1",
+		"title": {
+			"community_upcoming": "Prochains anniversaires",
+			"community_browse": "Trouver un utilisateur",
+			"profile_submit": "Soumettre votre anniversaire",
+			"profile_remove": "Retirer votre anniversaire",
+			"profile_validate": "Utiliser un code de validation",
+			"project_about": "À propos d'Amino Birthdays"
+		},
+		"upload": "Valider",
+		"link": "Lien vers le profil",
+		"name": "Nom",
+		"birthday": "Anniversaire",
+		"day": "JJ",
+		"month": "MM",
+		"timezone": "FH",
+		"date": "JJ/MM",
+		"birthday_message": "Joyeux anniversaire !",
+		"code": "Code de validation",
+		"menu" : {
+			"community": {
+				"title" : "Communauté",
+				"upcoming": "Prochains anniversaires",
+				"browse": "Trouver un utilisateur"
+			},
+			"profile": {
+				"title" : "Mon profil",
+				"submit": "Soumettre ou modifier",
+				"remove": "Retirer",
+				"validate": "Valider"
+			},
+			"about": "À propos d'Amino Birthdays"
+		},
+		"page" : {
+			"community_upcoming_message": "Anniversaires inscrits : ${birthday}",
+			"community_browse_message": "Utilisateur introuvable.",
+			"about": "Amino Birthdays est une app web proposant un système d'anniversaires autonome. Les membres peuvent s'ajouter et se retirer du système d'eux même. L'application profite de l'API d'Amino pour informer les autres membres d'un anniversaire, ou encore de prévenir à l'avance les followers d'un membre fêtant son anniversaire prochainement.<br><br>Pour toute question ou requête, contactez moi sur <a href='mailto:aminobirthdays@gmail.com'>aminobirthdays@gmail.com</a>.",
+			"advertisement": "Le web a un coût."
+		},
+		"notify": {
+			"common_error" : {
+				"101" : "Erreur : Un problème a eu lieu avec les serveurs d'Amino.",
+				"102": "Erreur : Un problème interne à Amino Birthday a eu lieu.",
+				"300": "Erreur : Vous n'avez pas l'autorisation."
+			},
+			"page_load": {
+				"201" : "Erreur : Cette communauté n'utilise pas Amino Birthday."
+			},
+			"profile_submit": {
+				"000" : "Succès : Allez voir vos DM pour le code de validation.",
+				"201" : "Erreur : Cette communauté n'utilise pas Amino Birthday.",
+				"202" : "Erreur : Vous avez fourni un mauvais lien.",
+				"203" : "Erreur : Vous êtes banni de cette communauté.",
+				"204" : "Erreur : Vous devez avoir au moins ${rep_min} de réputation pour soumettre votre anniversaire."
+			},
+			"profile_remove": {
+				"000" : "Succès : Allez voir vos DM pour le code de validation.",
+				"201" : "Erreur : Cette communauté n'utilise pas Amino Birthday.",
+				"202" : "Erreur : Vous avez fourni un mauvais lien.",
+				"203" : "Erreur : Vous n'étiez pas déjà inscrit."
+			},
+			"profile_validate": {
+				"000" : "Succès : Les modifications ont été appliquées.",
+				"201" : "Erreur : Cette communauté n'utilise pas Amino Birthday.",
+				"202" : "Erreur : Vous avez fourni un mauvais code."
+			}
+		}
+    },
+    "admin": {
+		"date_format" : "1",
+		"title": {
+			"community_upcoming": "Prochains anniversaires",
+			"community_browse": "Trouver un utilisateur",
+			"community_edit": "Paramètres de la communauté",
+			"community_remove": "Retirer la communauté",
+			"community_admin": "Administrateurs",
+			"profile_submit": "Soumettre votre anniversaire",
+			"profile_remove": "Retirer votre anniversaire"
+		},
+		"upload": "Valider",
+		"password": "Mot de passe",
+		"link": "Lien vers le profil",
+		"name": "Nom",
+		"birthday": "Anniversaire",
+		"day": "JJ",
+		"month": "MM",
+		"timezone": "FH",
+		"date": "JJ/MM",
+		"birthday_message": "Joyeux anniversaire !",
+		"code": "Code de validation",
+		"menu": {
+			"community":{
+				"title" : "Communauté",
+				"upcoming": "Prochains anniversaires",
+				"browse": "Trouver un utilisateur",
+				"edit": "Paramètres",
+				"remove": "Retirer",
+				"admin": "Administrateurs"
+			},
+			"profile": {
+				"title" : "Profils utlisateurs",
+				"submit": "Soumettre ou modifier",
+				"remove": "Retirer"
+			}
+		},
+		"page_community": {
+			"upcoming_message": "Anniversaires inscrits : ${birthday}",
+			"browse_message": "Utilisateur introuvable.",
+			"edit" : {
+				"chat": "Lien du tchat",
+				"rep": "Réputation minimale requise",
+				"notify": "Messages : Notifications d'anniversaire",
+				"submit": "Valider : Soumettre",
+				"edit": "Valider : Modifier",
+				"remove": "Valider : Retirer"
+			},
+			"remove_message": "Retirer Amino Birthdays de cette communauté.",
+			"admin_admin": "Gérer les administrateurs."
+		},
+		"notify": {
+			"common_error" : {
+				"101" : "Erreur : Un problème a eu lieu avec les serveurs d'Amino.",
+				"102": "Erreur : Un problème interne à Amino Birthday a eu lieu.",
+				"300": "Erreur : Vous n'avez pas l'autorisation."
+			},
+            "page_load": {
+				"201" : "Erreur : Cette communauté n'utilise pas Amino Birthday."
+			},
+			"admin_login": {
+                "000" : "Succès : Vous êtes en mode administrateur."
+			},
+			"community_edit": {
+                "000" : "Succès : Les modifications ont été appliquées."
+			},
+			"community_remove": {
+                "000" : "Succès : Cette communauté a été retiré d'Amino Birthdays."
+			},
+			"community_admin": {
+                "000" : "Succès : Les modifications ont été appliquées."
+            },
+            "profile_submit": {
+                "000" : "Succès : Les modifications ont été appliquées.",
+                "201" : "Erreur : Cette communauté n'utilise pas Amino Birthday.",
+                "202" : "Erreur : Vous avez fourni un mauvais lien."
+            },
+            "profile_remove": {
+                "000" : "Succès : Les modifications ont été appliquées.",
+                "201" : "Erreur : Cette communauté n'utilise pas Amino Birthday.",
+                "202" : "Erreur : Vous avez fourni un mauvais lien.",
+                "203" : "Erreur : Vous n'étiez pas déjà inscrit."
+            }
+		}
+    }
+}
