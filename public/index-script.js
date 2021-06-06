@@ -42,7 +42,6 @@ firebase_function("community_get", {"admin":"0"}, function (response) {
 		interface.page_profile_validate_form_code.placeholder = text.code;
 		
 		interface.page_profile_remove_form_link.placeholder = text.link;
-		interface.page_project_about.children[0].innerHTML = text.page.about;
 		interface.widget_birthday_message.innerHTML = text.birthday_message;
 		interface.header_pageTitle.innerHTML = text.title.community_upcoming;
 		interface.page_profile_submit_upload.children[0].innerHTML = text.upload;
@@ -144,7 +143,6 @@ var interface = {
 	"page_profile_validate": document.getElementById("page_profile_validate"),
 	"page_profile_validate_form_code": document.getElementById("page_profile_validate_form_code").children[0],
 	"page_profile_validate_upload": document.getElementById("page_profile_validate_upload"),
-	"page_project_about": document.getElementById("page_project_about"),
 	"widget":document.getElementById("widget"),
 	"widget_birthday": document.getElementById("widget").getElementsByClassName("widget_birthday")[0],
 	"widget_birthday_message": document.getElementsByClassName("widget_birthday_message")[0].children[0],
@@ -337,7 +335,6 @@ interface.page_community_browse.style.display = "none";
 interface.page_profile_submit.style.display = "none";
 interface.page_profile_remove.style.display = "none";
 interface.page_profile_validate.style.display = "none";
-interface.page_project_about.style.display = "none";
 interface.page.style.display = "block";
 
 function switch_page(new_page, transition = true){
@@ -533,8 +530,7 @@ interface.menu_profile_validate.addEventListener("touchend", function(event) {
 
 interface.menu_project_about.style.cursor = "pointer";
 interface.menu_project_about.addEventListener("click", function(){
-	switch_page("project_about");
-	animate_menu();
+	window.location.href = "https://github.com/LeDarknut/Amino-Birthdays/blob/main/README.md";
 }, false);
 interface.menu_project_about.addEventListener("mouseover", function(event) {
 	interface.menu_project_about.children[0].style.color = "#3ef4ab";
@@ -548,8 +544,7 @@ interface.menu_project_about.addEventListener("touchstart", function(event) {
 interface.menu_project_about.addEventListener("touchend", function(event) {
 	event.preventDefault();
 	interface.menu_project_about.children[0].style.color = "#ffffff";
-	switch_page("project_about");
-	animate_menu();
+	window.location.href = "https://github.com/LeDarknut/Amino-Birthdays/blob/main/README.md";
 }, false);
 
 var menu_touchstartX = 0;

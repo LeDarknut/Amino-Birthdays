@@ -277,21 +277,6 @@ html {
 	width: 80vmin;
 }
 
-#page_project_about{
-	width : 90vmin;
-}
-
-#page_project_about>p {
-	color : #000000;
-	-webkit-text-size-adjust: none;
-	-moz-text-size-adjust: none;
-	text-size-adjust: none;
-	font-size: 4vmin;
-	font-family: Roboto;
-	line-height: 6vmin;
-	text-align: justify;
-}
-
 #menu {
 	display : block;
 	height : calc(100vh - 8vmin);
@@ -335,7 +320,7 @@ html {
 	width: 100vmin;
 }
 
-.menu_item>span{
+.menu_item>*{
 	padding-left: 20vmin;
 	line-height: 6vmin;
 	font-family: Roboto;
