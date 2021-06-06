@@ -10,7 +10,7 @@
 			"project_about": "À propos d'Amino Birthdays"
 		},
 		"upload": "Valider",
-		"link": "Lien vers le profil",
+		"link": "Lien vers le profile",
 		"name": "Nom",
 		"birthday": "Anniversaire",
 		"day": "JJ",
@@ -26,8 +26,8 @@
 				"browse": "Trouver un utilisateur"
 			},
 			"profile": {
-				"title" : "Mon profil",
-				"submit": "Soumettre ou modifier",
+				"title" : "Mon profile",
+				"submit": "Soumettre ou modififier",
 				"remove": "Retirer",
 				"validate": "Valider"
 			},
@@ -35,9 +35,7 @@
 		},
 		"page" : {
 			"community_upcoming_message": "Anniversaires inscrits : ${birthday}",
-			"community_browse_message": "Utilisateur introuvable.",
-			"about": "Amino Birthdays est une app web proposant un système d'anniversaires autonome. Les membres peuvent s'ajouter et se retirer du système d'eux même. L'application profite de l'API d'Amino pour informer les autres membres d'un anniversaire, ou encore de prévenir à l'avance les followers d'un membre fêtant son anniversaire prochainement.<br><br>Pour toute question ou requête, contactez moi sur <a href='mailto:aminobirthdays@gmail.com'>aminobirthdays@gmail.com</a>.",
-			"advertisement": "Le web a un coût."
+			"community_browse_message": "Utilisateur introuvable."
 		},
 		"notify": {
 			"common_error" : {
@@ -81,7 +79,7 @@
 		},
 		"upload": "Valider",
 		"password": "Mot de passe",
-		"link": "Lien vers le profil",
+		"link": "Lien vers le profile",
 		"name": "Nom",
 		"birthday": "Anniversaire",
 		"day": "JJ",
@@ -100,8 +98,8 @@
 				"admin": "Administrateurs"
 			},
 			"profile": {
-				"title" : "Profils utlisateurs",
-				"submit": "Soumettre ou modifier",
+				"title" : "Profiles utlisateurs",
+				"submit": "Soumettre ou modififier",
 				"remove": "Retirer"
 			}
 		},
@@ -111,7 +109,9 @@
 			"edit" : {
 				"chat": "Lien du tchat",
 				"rep": "Réputation minimale requise",
+				"today": "Messages : Anniversaires du jour",
 				"notify": "Messages : Notifications d'anniversaire",
+				"chats": "Titre des tchats de notification",
 				"submit": "Valider : Soumettre",
 				"edit": "Valider : Modifier",
 				"remove": "Valider : Retirer"

@@ -35,9 +35,7 @@
 		},
 		"page" : {
 			"community_upcoming_message": "Submitted birthdays: ${birthday}",
-			"community_browse_message": "User not found.",
-			"about": "Amino Birthdays is a web app which feature an automated birthday system. Members can submit or remove their birthday themselves. The application rely on the Amino API to inform followers about upcoming birthdays.<br><br>For questions and requests, contact me on <a href='mailto:aminobirthdays@gmail.com'>aminobirthdays@gmail.com</a>.",
-			"advertisement": "Web has a cost."
+			"community_browse_message": "User not found."
 		},
 		"notify": {
 			"common_error" : {
@@ -109,8 +107,10 @@
 			"browse_message": "User not found.",
 			"edit" : {
 				"chat": "Chat's link",
-				"rep": "Minimal reputation needed",
+				"rep": "minimal reputation needed",
+				"today": "Messages : Today's birthdays",
 				"notify": "Messages : Birthday notification",
+				"chats": "Notification chat title",
 				"submit": "Validate : Submit",
 				"edit": "Validate : Edit",
 				"remove": "Validate : Remove"
