@@ -1612,12 +1612,12 @@ function refresh_community_upcoming(callback = function(){}) {
 	}, {threshold : [0]});
 
 	community.birthday_list.sort(function(a, b) {
-		var date_a = new Date(date.getUTCFullYear(), encode_numbers.indexOf(a.substring(0, 1)) - 1, encode_numbers.indexOf(a.substring(1, 2)), 0 -  encode_numbers.indexOf(a.substring(2, 3)), 0, 0, 0);
-		var date_b = new Date(date.getUTCFullYear(), encode_numbers.indexOf(b.substring(0, 1)) - 1, encode_numbers.indexOf(b.substring(1, 2)), 0 -  encode_numbers.indexOf(b.substring(2, 3)), 0, 0, 0);
-		if (date.getTime() >= date_a.getTime() + 86400000) {
+		var date_a = new Date(Date.UTC(date.getUTCFullYear(), encode_numbers.indexOf(a.substring(0, 1)) - 1, encode_numbers.indexOf(a.substring(1, 2)) + 1, -12 + encode_numbers.indexOf(a.substring(2, 3)), 0, 0, 0));
+		var date_b = new Date(Date.UTC(date.getUTCFullYear(), encode_numbers.indexOf(b.substring(0, 1)) - 1, encode_numbers.indexOf(b.substring(1, 2)) + 1, -12 + encode_numbers.indexOf(b.substring(2, 3)), 0, 0, 0));
+		if (date.getTime() > date_a.getTime()) {
 			date_a.setUTCFullYear(date_a.getUTCFullYear() + 1);
 		}
-		if (date.getTime() >= date_b.getTime() + 86400000) {
+		if (date.getTime() > date_b.getTime()) {
 			date_b.setUTCFullYear(date_b.getUTCFullYear() + 1);
 		}
 		var day_difference = date_a.getTime() - date_b.getTime();
