@@ -1,4 +1,4 @@
-# Amino-Birthdays
+# Amino Birthdays
 ## Français
 
 Une app web permettant aux utilisateurs d'un Amino d'ajouter d'eux-mêmes leur anniversaire afin de le voir souhaité dans un tchat de la communauté le jour en question. Si vous souhaitez l'ajouter à votre communauté ou pour toutes questions, envoyez un email à l'adresse aminobirthdays@gmail.com. Cette app est entièrement hébergée par le service Firebase de Google. Pour interagir avec un compte Amino dédié, l'app utilise l'API Amino.
