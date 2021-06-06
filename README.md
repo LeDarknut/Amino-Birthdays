@@ -1,8 +1,7 @@
 # Amino-Birthdays
-A web app that allow Amino users to register their birthday in order to them beeing wish in community's chat. If you would like to incorporate it to your community or if you have suggestions or questions, please consider emailing aminobirthdays@gmail.com.
+## Français
 
-## Hosting
-This app is fully hosted by Google Firebase.
+Une app web permettant aux utilisateurs d'un Amino d'ajouter d'eux-mêmes leur anniversaire afin de le voir souhaité dans un tchat de la communauté le jour en question. Si vous souhaitez l'ajouter à votre communauté ou pour toutes questions, envoyez un email à l'adresse aminobirthdays@gmail.com. Cette app est entièrement hébergée par le service Firebase de Google. Pour interagir avec un compte Amino dédié, l'app utilise l'API Amino.
 
-## Amino
-Usign Amino's API, this app manage to interact with a dedicated account.
+## English
+A web app that allow Amino users to register their birthday in order to them beeing wish in community's chat. If you would like to incorporate it to your community or if you have suggestions or questions, please consider emailing aminobirthdays@gmail.com. This app is fully hosted by Google Firebase. Usign Amino's API, this app manage to interact with a dedicated account.
