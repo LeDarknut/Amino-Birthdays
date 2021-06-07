@@ -5,19 +5,19 @@ body {
 	right: 0px;
 	bottom: 0px;
 	background-size: max(100vw, 56.25vh);
-    background-position-y: calc(-1 * ((max(177.78vw, 100vh) - 100vh) / 2));
-    background-position-x: calc(-1 * ((max(100vw, 56.25vh) - 100vw) / 2));
+	background-position-y: calc(-1 * ((max(177.78vw, 100vh) - 100vh) / 2));
+	background-position-x: calc(-1 * ((max(100vw, 56.25vh) - 100vw) / 2));
 	margin: 0vmin;
 }
 
 ::-webkit-scrollbar {
-    width: 6vmin !important;
+	width: 6vmin !important;
 }
 
 ::-webkit-scrollbar-thumb {
-   border-radius: 3vmin !important;
-   background: #088a56A0 !important;
-   min-height: 20vmin !important;
+	border-radius: 3vmin !important;
+	background: #088a56A0 !important;
+	min-height: 20vmin !important;
 }
 
 
@@ -49,7 +49,7 @@ html {
 	width: 100vw;
 	height: 100vh;
 	background-size: max(100vw, 56.25vh);
-    background-position-y: calc(-1 * ((max(177.78vw, 100vh) - 100vh) / 2));
+	background-position-y: calc(-1 * ((max(177.78vw, 100vh) - 100vh) / 2));
 	background-position-x: calc(-1 * ((max(100vw, 56.25vh) - 100vw) / 2));
 	z-index: 7;
 }
@@ -67,16 +67,16 @@ html {
 }
 
 #page-login_form_key {
-    margin-top: 40vh;
+	margin-top: 40vh;
 }
 
 #page-login_form_key>input {
-    width: 32vmin;
-    text-align: center;
+	width: 32vmin;
+	text-align: center;
 }
 
 #page-login_upload {
-    margin-left: calc((100vw - 32vmin) / 2);
+	margin-left: calc((100vw - 32vmin) / 2);
 }
 
 #header {
@@ -188,7 +188,7 @@ html {
 	color : #000000;
 	font-size: 4vmin;
 	font-family: Roboto;
-    line-height: 6vmin;
+	line-height: 6vmin;
 }
 
 .form_submit {
@@ -207,7 +207,7 @@ html {
 	color : #ffffff;
 	font-size: 4vmin;
 	font-family: Roboto;
-    line-height: 8vmin;
+	line-height: 8vmin;
 }
 
 #page_community_upcoming_message {
@@ -233,7 +233,7 @@ html {
 	color : #000000;
 	font-size: 4vmin;
 	font-family: Roboto;
-    line-height: 8vmin;
+	line-height: 8vmin;
 }
 
 #page_community_browse_preview {
@@ -269,9 +269,9 @@ html {
 
 
 #page_community_remove_message {
-    width: 80vmin;
-    color : #000000;
-    font-size: 4vmin;
+	width: 80vmin;
+	color : #000000;
+	font-size: 4vmin;
 	font-family: Roboto;
 }
 
@@ -284,8 +284,8 @@ html {
 }
 
 #page_profile_submit {
-    display: block;
-    width : 100vmin;
+	display: block;
+	width : 100vmin;
 }
 
 #page_profile_submit_form {
@@ -329,7 +329,7 @@ html {
 	color : #000000;
 	font-size: 4vmin;
 	font-family: Roboto;
-    line-height: 7vmin;
+	line-height: 7vmin;
 }
 
 #page_profile_submit_form_birthday_inputs_date_separator {
@@ -677,8 +677,8 @@ html {
 	width: 100vw;
 	position: absolute;
 	top: 0vmin;
-    left: 0vmin;
-    padding-top: 8vmin;
+	left: 0vmin;
+	padding-top: 8vmin;
 	z-index: 9;
 }
 
