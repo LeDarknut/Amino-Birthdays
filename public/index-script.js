@@ -1,9 +1,9 @@
 ;var url = new URL(window.location.href);
 var language;
 var text;
-var encode_numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var community = {"id":url.searchParams.get("community")};
-var page = url.searchParams.get("page");
+var encode_numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]; //Number encoding to take only one character in jason files
+var community = {"id":url.searchParams.get("community")}; //Get community's id from the url
+var page = url.searchParams.get("page"); //Display a specific section if asked in the url
 if (!page || !(["community_upcoming", "community_browse", "profile_submit", "profile_remove", "profile_validate"].includes(page))) {
 	page = "community_upcoming";
 }
@@ -13,6 +13,7 @@ if (!community.id) {
 var birthday_list = [];
 var countdown_interval = false;
 
+//Get and display community's infos and birthdays
 firebase_function("community_get", {"admin":"0"}, function (response) {
 	text = response.text;
 	if (response.code == "000") {
@@ -104,6 +105,7 @@ var width = window.innerWidth;
 var height = window.innerHeight;
 document.getElementById("viewport").setAttribute("content", "width=" + width + ", height=" + height + ", initial-scale=0");
 
+//Create a var for each usefull DOM's elements
 var interface = {
 	"pageLoading": document.getElementById("page-loading"),
 	"header_menu": document.getElementById("header_menu"),
@@ -150,6 +152,7 @@ var interface = {
 	"loading": document.getElementById("loading")
 };
 
+//Refresh birthay list
 function refresh_birthday_list(callback) {
 	firebase_function("community_get", {"admin":"0"}, function (response) {
 		if (response.code == "000") {
@@ -167,6 +170,7 @@ function refresh_birthday_list(callback) {
 	});
 }
 
+//Process every birthday widget's countdown
 var countdown = {
 	"min" : "00",
 	"sec" : "00",
@@ -277,6 +281,7 @@ var countdown = {
 	}
 }
 
+//Color's Hue and Value to RGB code
 function toRGB(nh, nv) {
 	var s = 1;
 	nh = parseInt(nh);
@@ -337,6 +342,7 @@ interface.page_profile_remove.style.display = "none";
 interface.page_profile_validate.style.display = "none";
 interface.page.style.display = "block";
 
+//Navigate between sections
 function switch_page(new_page, transition = true){
 	if (transition){
 		var step_out = 1.0;
@@ -383,6 +389,7 @@ function switch_page(new_page, transition = true){
 	}
 }
 
+//Initialize every button's interaction when hovered and clicked
 interface.header_menu.style.cursor = "pointer";
 interface.header_menu.addEventListener("click", animate_menu, false);
 interface.header_menu.addEventListener("mouseover", function(event) {
@@ -563,6 +570,7 @@ interface.menu.addEventListener("touchend", function(event) {
 	}
 }, false);
 
+//initialize sliding effect of the left menu drawer
 interface.menu.style.left = "-100vmin"
 function animate_menu() {
 	document.activeElement.blur();
@@ -597,6 +605,7 @@ function animate_menu() {
 	}
 }
 
+//Initialize every input's interaction when focused and edited
 var profile_found = false;
 
 interface.page_community_browse_form_link.addEventListener("input", function(event) {
@@ -1171,6 +1180,7 @@ function profile_validate_upload(){
 	});
 }
 
+//Display a notification for successes and errors
 function notify(text, success) {
 	interface.notification.children[0].innerHTML = text;
 	if (success) {
@@ -1208,6 +1218,7 @@ function notify(text, success) {
 	}, 5000);
 }
 
+//Display a loading animation during process
 function loading(state){
 	if (state){
 		interface.loading.style.display = "block";
@@ -1238,6 +1249,7 @@ function loading(state){
 	}
 }
 
+//Interact with the server
 function firebase_function(function_name, arguments, callback){
 	const http = new XMLHttpRequest();
 	var url = "https://europe-west1-aminobirthdays.cloudfunctions.net/function?action=" + function_name + "&community=" + community.id;
@@ -1253,6 +1265,7 @@ function firebase_function(function_name, arguments, callback){
 	}
 }
 
+//Reorder birthdays widget every hour
 function refresh_community_upcoming(callback = function(){}) {
 	var date = new Date();
 	interface.page_community_upcoming_birthdays.innerHTML = "";
